@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello</title>
+        <script>
+            function UpBut(name)
+            {
+                //const { spawn } = require('child_process');
+                //const childProcess = spawn('test.py',name);
+                //var file=name.parentElement.childNodes[1].files[0]
+                //alert(file.name);
+                
+            }
+            window.onbeforeunload=UnloadComfirm;
+        </script>
+    </head>
+    <body>
+        {% extends "template.html" %}
+        {% block content %}
+        <form method='post' action='{{ url_for("call_hello") }}'><input type='text' name='username' />
+            </br>
+            <button type='submit'>Submit</button>
+        </form>
+        <h2>Upload new File</h1>
+        <form action='{{ url_for("upload_file") }}' method=post enctype=multipart/form-data>
+            <p><input type=file name=file>
+            <input type='submit' value=Upload>
+        </form>
+        <div>
+            
+        </div>
+        {% endblock %}
+    </body>
+</html>

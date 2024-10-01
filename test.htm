@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+</head>
+<body>
+        <h1>My Website Text</h1>
+        <table border="1">
+                <tr>
+                        <td>Text Text Text</td>
+                        <td>Text Text Text</td>
+                        <td>Text Text Text</td>
+                </tr>
+                <tr>
+                        <td>Text Text Text</td>
+                        <td>Text Text Text</td>
+                        <td>Text Text Text</td>
+                </tr>
+                <tr>
+                        <td>Text Text Text</td>
+                        <td>Text Text Text</td>
+                        <td id="test_t">Text Text Text</td>
+                </tr>
+        </table>
+        <p onmouseenter="enter()" style="color:#008080">XXXXXXXXXXXXXXXXXXXXXXXXX</p>
+        <input id="IPUT">
+        <br>
+        <textarea id="TPUT">654123</textarea>
+        <br>
+        <button onclick="B()">000</button>
+<script lang="JavaScript">
+        var x=0;
+        function enter()
+        {
+                document.getElementById("demo").innerHTML = "x";  
+        }
+        function B()
+        {
+                var i=document.getElementById("test_t");
+                var t=document.getElementById("IPUT").innerHTML;
+                //alert(t);
+                var s=document.getElementById("TPUT").value;
+                i.innerHTML=s;
+                //alert(s);
+                //document.getelementbyid("TPUT").value=xx;
+                //t.innerHTML="XXX";
+
+        }
+</script>
+</body>
+</html>
